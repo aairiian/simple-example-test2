@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 
 public class IntegerExamplesTest {
+
     @Test
     public void intengerExploration (){
         Integer four = new Integer(4);
@@ -14,12 +15,22 @@ public class IntegerExamplesTest {
 
         Integer six = 6;
         assertEquals("autoboxing assigment for 6", 6, six.intValue());
+
+        Integer seven = new Integer(7);
+        assertEquals("IntValue returns int 7", 7, seven.intValue());
+
+
+
+
     }
-
-    @Test
-
-    public void toHexString () {
-
+       @Test
+       public static void main(String args[]) {
+           int i = 11;
+           String b = Integer.toHexString(i);
+           System.out.println("Hex value is 11" + b);
     }
-
 }
+
+
+
+
