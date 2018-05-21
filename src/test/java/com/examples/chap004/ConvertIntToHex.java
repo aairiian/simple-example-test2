@@ -1,5 +1,8 @@
 package com.examples.chap004;
+
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class ConvertIntToHex {
 
@@ -12,7 +15,17 @@ public class ConvertIntToHex {
         String a = Integer.toHexString (10);
         System.out.print ("Hex value is 10" + a);
 
+        Integer tree = new Integer(3);
+        assertEquals ("int value returns 3", 3, tree.intValue());
+
+
+        }
+
+
+
+
+
+
     }
 
 
-}
