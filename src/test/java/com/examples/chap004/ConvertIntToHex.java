@@ -18,6 +18,9 @@ public class ConvertIntToHex {
         Integer tree = new Integer(3);
         assertEquals ("int value returns 3", 3, tree.intValue());
 
+        Integer sample = new Integer(5);
+        assertEquals("int value returns 5", 5, sample.intValue());
+
 
         }
 

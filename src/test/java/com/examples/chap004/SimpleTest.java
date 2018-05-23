@@ -1,25 +1,28 @@
+package com.examples.chap004;
 
 import org.junit.Test;
 
 public class SimpleTest {
 
     @Test
-    public static void main (String[] args) {
-        System.out.println("Hello, Anait");
+    public static void main(String[] args) {
+        byte myByteValue = 20;
+        System.out.println("my New Byte Value = " + myByteValue);
 
-        int tree = 3;
-        int twenty = 20;
-        int convertValue = 21;
-        int summaryValue = (tree+convertValue+convertValue);
-        int b = 21;
-        int exampleCase = (summaryValue - convertValue);
+        short myShortValue = 1;
+        System.out.println("my short Value = " + myShortValue);
 
-        System.out.println(tree);
-        System.out.println(twenty);
-        System.out.println(convertValue);
-        System.out.println(summaryValue +b);
-        System.out.println(twenty + b);
-        System.out.println(exampleCase);
+        int myIntValue = 100;
+        System.out.println("my Int Value = " + myIntValue);
+
+        long myLongValue = 98765432;
+        long myEqualValue = (long) (myLongValue*500+10);
+        System.out.println("my Equal Value = " + myEqualValue);
+
+        long sumValues = (long) (myByteValue+myShortValue+myIntValue);
+        System.out.println("sum Values of byte/short and int = " +sumValues);
+
+
 
 
     }
