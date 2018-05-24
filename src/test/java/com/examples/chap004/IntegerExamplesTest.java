@@ -18,8 +18,12 @@ public class IntegerExamplesTest {
 
         Integer seven = new Integer(7);
         assertEquals("IntValue returns int 7", 7, seven.intValue());
+
     }
-}
+
+
+    }
+
 
 
 

@@ -16,14 +16,11 @@ public class SimpleTest {
         System.out.println("my Int Value = " + myIntValue);
 
         long myLongValue = 98765432;
-        long myEqualValue = (long) (myLongValue*500+10);
+        long myEqualValue = (long) (myLongValue * 500 + 10);
         System.out.println("my Equal Value = " + myEqualValue);
 
-        long sumValues = (long) (myByteValue+myShortValue+myIntValue);
-        System.out.println("sum Values of byte/short and int = " +sumValues);
-
-
-
+        long sumValues = (long) (myByteValue + myShortValue + myIntValue);
+        System.out.println("sum Values of byte/short and int = " + sumValues);
 
     }
 }

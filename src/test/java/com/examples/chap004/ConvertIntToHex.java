@@ -20,8 +20,6 @@ public class ConvertIntToHex {
 
         Integer sample = new Integer(5);
         assertEquals("int value returns 5", 5, sample.intValue());
-
-
         }
 
 
