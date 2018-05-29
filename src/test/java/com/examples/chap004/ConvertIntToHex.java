@@ -2,44 +2,36 @@ package com.examples.chap004;
 
 import org.junit.Test;
 
+import static java.lang.Integer.*;
+import static java.lang.Integer.MIN_VALUE;
 import static org.junit.Assert.assertEquals;
 
 public class ConvertIntToHex {
 
     @Test
-    public static void main(String args[]) {
+    public  void canConvertInttoHex () {
 
-        /* This is first steps (it's wrong */
-        String b = Integer.toHexString(11);
-        System.out.println("Hex value is 11" + b);
+        assertEquals("int 11 to hex", "b", toHexString(11));
+        System.out.println("int 11 to hex = " + toHexString(11));
 
-        String a = Integer.toHexString(10);
-        System.out.print("Hex value is 10" + a);
+        assertEquals("int 10 to hex ", "a", toHexString(10));
+        System.out.println("int 10 to hex = " + toHexString(10));
 
-        Integer tree = new Integer(3);
-        assertEquals("int value returns 3", 3, tree.intValue());
+        assertEquals("int 3 to hex", "3", toHexString(3));
+        System.out.println("int 3 to hex = " + toHexString(3));
 
-        Integer sample = new Integer(5);
-        assertEquals("int value returns 5", 5, sample.intValue());
+        assertEquals("int 21 to hex", "15", toHexString(21));
+        System.out.println("int 21 to hex = " + toHexString(21));
 
-        /* conver numbers toHex exercise chap 004 */
-
-        Integer i = new Integer(11);
-        System.out.println("   returns Hex number = " + Integer.toHexString(i));
-
-        Integer numberValue = new Integer(10);
-        System.out.println("returns Hex number = " + Integer.toHexString(numberValue));
-
-        Integer threeValue = new Integer ("3");
-        System.out.println("returns simple number = " + Integer.toString(threeValue));
-
-        Integer twentyoneValue = new Integer("15");
-        System.out.println("convert twentyone to fifteen = " + twentyoneValue);
 
 
     }
 
-}
+
+
+    }
+
+
 
 
 
