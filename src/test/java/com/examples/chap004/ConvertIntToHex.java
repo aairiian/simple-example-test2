@@ -23,8 +23,17 @@ public class ConvertIntToHex {
         assertEquals("int 21 to hex", "15", toHexString(21));
         System.out.println("int 21 to hex = " + toHexString(21));
 
+    }
 
+    @Test
+    public void maxAndMinValue () {
+        int MIN_VALUE = -2147483648;
+        int MAX_VALUE = 2147483647;
 
+        assertEquals("int Max Value", -2147483648, Integer.MIN_VALUE);
+        assertEquals(" return Max Value", 2147483647, Integer.MAX_VALUE);
+        System.out.println("return Min Value = " + Integer.MIN_VALUE);
+        System.out.println("return Max Value = " + Integer.MAX_VALUE);
     }
 
 
