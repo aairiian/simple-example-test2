@@ -5,6 +5,8 @@ import org.junit.Test;
 import static java.lang.Integer.*;
 import static java.lang.Integer.MIN_VALUE;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertTrue;
 
 public class ConvertIntToHex {
 
@@ -36,6 +38,25 @@ public class ConvertIntToHex {
         System.out.println("return Max Value = " + Integer.MAX_VALUE);
     }
 
+    @Test
+    public void checkEqualValues () {
+
+        Integer firstValue = new Integer(4);
+        Integer secondValue = new Integer(4);
+
+        assertTrue(firstValue.equals(secondValue));
+
+    }
+
+    @Test
+    public void canKiloToPound () {
+        double poundsValue = 10d;
+        double convertPoundstoKilo = poundsValue * 0.45359237d;
+
+        System.out.println("convert Pounds to Kilogram is = " + convertPoundstoKilo);
+        /* exercises to video tutorial 4-18 */
+
+    }
 
 
     }
